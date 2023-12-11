@@ -2,7 +2,7 @@
 <unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="example.c">
 <cpp:include>#
 <cpp:directive>include
-</cpp:directive> 
+</cpp:directive>
 <cpp:file>&lt;stdio.h&gt;
 </cpp:file>
 </cpp:include>
@@ -10,7 +10,7 @@
 <type>
 <name>int
 </name>
-</type> 
+</type>
 <name>main
 </name>
 <parameter_list>()
@@ -22,7 +22,7 @@
 <type>
 <name>int
 </name>
-</type> 
+</type>
 <name>number
 </name>
 </decl>;
@@ -69,7 +69,8 @@
 </expr_stmt>
 <comment type="line">// Check if the number is even or odd
 </comment>
-<if_stmt><if>if 
+<if_stmt>
+<if>if
 <condition>(
 <expr>
 <name>number
@@ -77,10 +78,6 @@
 <operator>%
 </operator>
 <literal type="number">2
-</literal>
-<operator>==
-</operator>
-<literal type="number">0
 </literal>
 </expr>)
 </condition>
@@ -96,7 +93,7 @@
 <argument_list>(
 <argument>
 <expr>
-<literal type="string">"%d is an even numer.\n"
+<literal type="string">"%d is an even number.\n"
 </literal>
 </expr>
 </argument>,
