@@ -39,7 +39,7 @@
 <index>[]
 </index>
 </name>
-<init>=
+<init>= 
 <expr>
 <literal type="string">"Hello world!"
 </literal>
@@ -58,7 +58,7 @@
 <literal type="string">"%d"
 </literal>
 </expr>
-</argument>,
+</argument>, 
 <argument>
 <expr>
 <operator>&amp;
@@ -70,9 +70,9 @@
 </argument_list>
 </call>
 </expr>;
-</expr_stmt>
+</expr_stmt> 
 <if_stmt>
-<if>if
+<if>if 
 <condition>(
 <expr>
 <name>x
@@ -81,10 +81,18 @@
 </operator>
 <literal type="number">0
 </literal>
+<operator>&amp;&amp;
+</operator>
+<name>a
+</name>
+<operator>!=
+</operator>
+<name>NULL
+</name>
 </expr>)
 </condition>
 <block>{
-<block_content>
+<block_content>  
 <expr_stmt>
 <expr>
 <call>
@@ -117,7 +125,7 @@
 </block>
 </if>
 </if_stmt>
-<return>return
+<return>return 
 <expr>
 <literal type="number">0
 </literal>
