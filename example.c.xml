@@ -79,6 +79,10 @@
 </operator>
 <literal type="number">2
 </literal>
+<operator>!=
+</operator>
+<literal type="number">0
+</literal>
 </expr>)
 </condition>
 <block>{
@@ -93,7 +97,7 @@
 <argument_list>(
 <argument>
 <expr>
-<literal type="string">"%d is an even number.\n"
+<literal type="string">"%d is an odd number.\n"
 </literal>
 </expr>
 </argument>,
