@@ -26,7 +26,7 @@
 <name>x
 </name>
 </decl>;
-</decl_stmt>
+</decl_stmt> 
 <decl_stmt>
 <decl>
 <type>
@@ -70,7 +70,7 @@
 </argument_list>
 </call>
 </expr>;
-</expr_stmt> 
+</expr_stmt>
 <if_stmt>
 <if>if 
 <condition>(
@@ -79,7 +79,7 @@
 </name>
 <operator>&gt;
 </operator>
-<literal type="number">0
+<literal type="number">1
 </literal>
 <operator>&amp;&amp;
 </operator>
@@ -92,7 +92,7 @@
 </expr>)
 </condition>
 <block>{
-<block_content>  
+<block_content>
 <expr_stmt>
 <expr>
 <call>
@@ -120,7 +120,7 @@
 </argument_list>
 </call>
 </expr>;
-</expr_stmt>
+</expr_stmt>    
 </block_content>}
 </block>
 </if>
