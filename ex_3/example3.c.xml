@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="example3.c"><cpp:include>#
+<unit><cpp:include><cpp:directive>include
+<unit><cpp:include><cpp:file>&lt;stdio.h&gt;
+<unit><function><type><name>int
+<unit><function><name>main
+<unit><function><parameter_list>()</parameter_list> 
+<unit><function><block>{
+    <unit><function><block><block_content><decl_stmt><decl><type><name>int</name></type> 
+    <unit><function><block><block_content><decl_stmt><decl><name>x</name></decl>
+    <unit><function><block><block_content><decl_stmt>;</decl_stmt>
+    <unit><function><block><block_content><decl_stmt><decl><type><name>char</name></type> 
+    <unit><function><block><block_content><decl_stmt><decl><name><name>a</name>
+    <unit><function><block><block_content><decl_stmt><decl><name><index>[]</index></name> 
+    <unit><function><block><block_content><decl_stmt><decl><init>= 
+        <unit><function><block><block_content><decl_stmt><decl><init><expr><literal type="string">"Hello world!"</literal></expr></init></decl>
+        <unit><function><block><block_content><decl_stmt>;</decl_stmt>
+    <unit><function><block><block_content><expr_stmt><expr><call><name>scanf</name>
+    <unit><function><block><block_content><expr_stmt><expr><call><argument_list>(
+        <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><literal type="string">"%d"</literal></expr></argument>
+        <unit><function><block><block_content><expr_stmt><expr><call><argument_list>, 
+            <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><operator>&amp;</operator>
+            <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>x</name></expr></argument>
+            <unit><function><block><block_content><expr_stmt><expr><call><argument_list>)</argument_list></call></expr>;</expr_stmt>
+    <unit><function><block><block_content><if_stmt><if>if 
+        <unit><function><block><block_content><if_stmt><if><condition>(
+            <unit><function><block><block_content><if_stmt><if><condition><expr><name>x</name>
+            <unit><function><block><block_content><if_stmt><if><condition><expr><operator>&gt;</operator>
+            <unit><function><block><block_content><if_stmt><if><condition><expr><literal type="number">0</literal></expr>
+            <unit><function><block><block_content><if_stmt><if><condition>)</condition>
+            <unit><function><block><block_content><if_stmt><if><block>{
+                <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><name>printf</name>
+                <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>(
+                    <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><literal type="string">"%s, %d Ã¨ maggiore di 1.\n"</literal></expr></argument>
+                    <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>,
+                        <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>a</name></expr></argument>
+                        <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>,
+                            <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>x</name></expr></argument>
+                            <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>)</argument_list></call></expr>
+                            <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt>;</expr_stmt></block_content>
+                            <unit><function><block><block_content><if_stmt><if><block>}</block></if></if_stmt>
+    <unit><function><block><block_content><return>return 
+        <unit><function><block><block_content><return><expr><literal type="number">0</literal></expr>
+        <unit><function><block><block_content><return>;</return>
+</block_content>
+<unit><function><block>}</block></function></unit>
