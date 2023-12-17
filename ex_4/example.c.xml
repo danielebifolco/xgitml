@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="example.c"><cpp:include>#<unit><cpp:include><cpp:directive>include
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="example.c"><cpp:include>#
+<unit><cpp:include><cpp:directive>include
 <unit><cpp:include><cpp:file>&lt;stdio.h&gt;
 <unit><function><type><name>int
 <unit><function><name>main
@@ -12,12 +13,11 @@
 <unit><function><block><block_content><decl_stmt><decl><name><name>a
 <unit><function><block><block_content><decl_stmt><decl><name><index>[]
 <unit><function><block><block_content><decl_stmt><decl><init>= 
-<unit><function><block><block_content><decl_stmt><decl><init><expr><literal type="string">"Hello world!"
+<unit><function><block><block_content><decl_stmt><decl><expr><literal type="string">"Hello world!"
 <unit><function><block><block_content><decl_stmt>;
 <unit><function><block><block_content><expr_stmt><expr><call><name>scanf
 <unit><function><block><block_content><expr_stmt><expr><call><argument_list>(
 <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><literal type="string">"%d"
-<unit><function><block><block_content><expr_stmt><expr><call><argument_list>, 
 <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><operator>&amp;
 <unit><function><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>x
 <unit><function><block><block_content><expr_stmt><expr><call><argument_list>)
@@ -27,12 +27,15 @@
 <unit><function><block><block_content><if_stmt><if><condition><expr><name>x
 <unit><function><block><block_content><if_stmt><if><condition><expr><operator>&gt;
 <unit><function><block><block_content><if_stmt><if><condition><expr><literal type="number">0
+<unit><function><block><block_content><if_stmt><if><condition><expr><operator>&amp;&amp;
+<unit><function><block><block_content><if_stmt><if><condition><expr><name>a
+<unit><function><block><block_content><if_stmt><if><condition><expr><operator>=
+<unit><function><block><block_content><if_stmt><if><condition><expr><name>NULL
 <unit><function><block><block_content><if_stmt><if><condition>)
 <unit><function><block><block_content><if_stmt><if><block>{
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><name>printf
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>(
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><literal type="string">"%s, %d Ã¨ maggiore di 1.\n"
-<unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>,
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>a
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list>,
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt><expr><call><argument_list><argument><expr><name>x
@@ -40,6 +43,6 @@
 <unit><function><block><block_content><if_stmt><if><block><block_content><expr_stmt>;
 <unit><function><block><block_content><if_stmt><if><block>}
 <unit><function><block><block_content><return>return 
-<unit><function><block><block_content><return><expr><literal type="number">0
-<unit><function><block><block_content><return>;
+<unit><function><block><block_content><expr><literal type="number">0
+<unit><function><block><block_content>;
 <unit><function><block>}

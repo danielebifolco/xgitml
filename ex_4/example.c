@@ -4,7 +4,7 @@ int main() {
     int x;
     char a[] = "Hello world!";
     scanf("%d", &x);
-    if (x>0) {
+    if (x>0 && a=NULL) {
         printf("%s, %d è maggiore di 1.\n",a,x);
     }
     return 0;
